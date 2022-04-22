@@ -68,7 +68,7 @@ export default {
     '/api/': {
       // Switch between [::1] and localhost if it doesn't work and modify the port if needed
       // target: 'http://[::1]:8181/api',
-      target: 'http://pomme.antoine-guglielmi.com/api',
+      target: 'https://pomme.antoine-guglielmi.com/api',
       // target: 'https://pommedapi.herokuapp.com/api',
       pathRewrite: {'^/api/': '/'},
       changeOrigin: true
