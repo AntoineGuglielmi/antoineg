@@ -1,0 +1,41 @@
+@import '@/assets/styles/imports/_15_functions.scss';
+
+$extendsColors: (
+  'bleu',
+  'rouge',
+  'orange',
+  'vert'
+);
+
+$extendsTypes: (
+  'pale',
+  'clair',
+  'base',
+  'fonce',
+  'dark'
+);
+
+@each $c in $extendsColors {
+  @each $t in $extendsTypes {
+    .color--#{$c}-#{$t} {
+      color: color(#{$c},#{$t});
+    }
+  }
+}
+
+@each $c in $extendsColors {
+  @each $t in $extendsTypes {
+    .background-color--#{$c}-#{$t} {
+      background-color: color(#{$c},#{$t});
+    }
+  }
+}
+
+@each $c in $extendsColors {
+  @each $t in $extendsTypes {
+    .cbgc--#{$c} {
+      background-color: color(#{$c},pale);
+      color: color(#{$c},base);
+    }
+  }
+}

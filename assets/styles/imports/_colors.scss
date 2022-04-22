@@ -1,0 +1,54 @@
+$bleu-base: #4797FF;
+$rouge-base: #eb5151;
+$vert-base: #7dff2f;
+$orange-base: #ffb72d;
+$noir-base: #0f0f0f;
+
+$bleu: (
+  pale: lighten($bleu-base,32%),
+  clair: lighten($bleu-base,16%),
+  base: $bleu-base,
+  fonce: darken($bleu-base,16%),
+  dark: darken($bleu-base,32%)
+);
+
+$rouge: (
+  pale: lighten($rouge-base,32%),
+  clair: lighten($rouge-base,16%),
+  base: $rouge-base,
+  fonce: darken($rouge-base,16%),
+  dark: darken($rouge-base,32%)
+);
+
+$vert: (
+  pale: lighten($vert-base,32%),
+  clair: lighten($vert-base,16%),
+  base: $vert-base,
+  fonce: darken($vert-base,16%),
+  dark: darken($vert-base,32%)
+);
+
+$orange: (
+  pale: lighten($orange-base,32%),
+  clair: lighten($orange-base,16%),
+  base: $orange-base,
+  fonce: darken($orange-base,16%),
+  dark: darken($orange-base,32%)
+);
+
+$noir: (
+  blanc: lighten($noir-base,90%),
+  gris-clair: lighten($noir-base,80%),
+  gris-fonce: lighten($noir-base,50%),
+  base: $noir-base,
+  // fonce: darken($noir-base,16%),
+  // dark: darken($noir-base,32%)
+);
+
+$colors: (
+  'bleu': $bleu,
+  'rouge': $rouge,
+  'vert': $vert,
+  'orange': $orange,
+  'noir': $noir
+);

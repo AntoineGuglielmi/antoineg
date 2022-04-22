@@ -1,0 +1,11 @@
+@use 'sass:map';
+
+@import 'colors';
+
+@function color($name,$variation) {
+
+  $color: map-get($colors,$name);
+
+  @return map-get($color, $variation);
+  
+}

@@ -1,0 +1,263 @@
+form
+  display: flex
+  flex-direction: column
+  gap: 0.5rem
+  width: 100%
+  max-width: 400px
+
+.label__label,
+input,
+select,
+textarea,
+button
+  font-size: inherit
+  font-family: inherit
+  color: inherit
+
+.label__label,
+input,
+select,
+textarea
+  background-color: transparent
+  border: 1px solid color(noir,gris-clair)
+  padding: 0.5rem
+  border-radius: 0.25rem
+
+label
+  display: flex
+  flex-direction: column
+
+  &.label__checkbox,
+  &.label__radio
+    transition: 0.15s ease-in-out
+    transition-property: background-color, border-color
+
+    input[type=checkbox],
+    input[type=radio]
+      display: none
+    
+    &.label__active
+      border-color: transparent
+      background-color: color(bleu,base)
+      color: color(noir,blanc)
+  
+  &.label__checkbox
+    text-decoration: line-through
+
+    &.label__active
+      text-decoration: none
+
+.form__row
+  display: flex
+  align-items: center
+  gap: 0.5rem
+
+  & > *
+    width: 100%
+    flex-shrink: 1
+  
+.label__input
+  display: flex
+  gap: 0.5rem
+  align-items: center
+  
+.form__separation
+  height: 1px
+  display: block
+  background-color: $gris-clair
+  margin: 0.5rem 0
+  
+.form__error
+  border: 1px solid color(rouge,clair)
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+// form
+//   display: flex
+//   gap: 0.5rem
+//   flex-direction: column
+//   width: 100%
+//   max-width: 400px
+
+//   .form__separation
+//     height: 1px
+//     display: block
+//     background-color: $gris-clair
+//     margin: 0.5rem 0
+  
+//   .label__label,
+//   button,
+//   input,
+//   select,
+//   textarea
+//     border: 1px solid $gris-clair
+//     background-color: transparent
+//     padding: 0.5rem
+//     font-size: inherit
+//     font-family: inherit
+//     color: inherit
+
+//   button
+//     transition: 0.15s ease-in-out
+//     transition-property: background-color, border-color
+//     &:hover
+//       cursor: pointer
+//       // border-color: transparent
+//       // background-color: $bleu
+//       // color: $blanc
+//     &#budget__empty
+//       background-color: $orange-clair
+//       // color: $orange
+//     &#budget__delete
+//       background-color: $rouge-clair
+//       // color: $rouge
+
+// .form__row
+//   display: flex
+//   align-items: center
+//   gap: 0.5rem
+
+//   & > *
+//     width: 100%
+//     flex-shrink: 1
+
+// label
+//   &.form__group
+//     display: flex
+//     flex-direction: column
+//     font-size: inherit
+//     font-family: inherit
+//     color: inherit
+
+//   &.label__checkbox,
+//   &.label__radio
+//     transition: 0.15s ease-in-out
+//     transition-property: background-color, border-color
+
+//     input[type=checkbox],
+//     input[type=radio]
+//       display: none
+    
+//     &.label__active
+//       border-color: transparent
+//       // background-color: $bleu
+//       color: $blanc
+  
+//   &.label__checkbox
+//     text-decoration: line-through
+
+//     &.label__active
+//       text-decoration: none
+  
+//   .label__input
+//     display: flex
+//     gap: 0.5rem
+//     align-items: center
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .form__separation
+//   height: 1px
+//   display: block
+//   background-color: $gris-clair
+//   margin: 0.5rem 0
+
+// .form__row
+//   display: flex
+//   align-items: center
+//   gap: 0.5rem
+
+//   & > *
+//     width: 100%
+//     flex-shrink: 1
+  
+// .form__group
+//   display: flex
+//   flex-direction: column
+//   font-size: inherit
+//   font-family: inherit
+//   color: inherit
+
+//   &.label__checkbox,
+//   &.label__radio
+//     transition: 0.15s ease-in-out
+//     transition-property: background-color, border-color
+
+//     input[type=checkbox],
+//     input[type=radio]
+//       display: none
+    
+//     &.label__active
+//       border-color: transparent
+//       background-color: $bleu
+//       color: $blanc
+  
+//   &.label__checkbox
+//     text-decoration: line-through
+
+//     &.label__active
+//       text-decoration: none
+  
+//   .label__input
+//     display: flex
+//     gap: 0.5rem
+//     align-items: center
+
+// .label__label,
+// button,
+// input,
+// select,
+// textarea
+//   border: 1px solid $gris-clair
+//   background-color: transparent
+//   padding: 0.5rem
+//   font-size: inherit
+//   font-family: inherit
+//   color: inherit
+
+//   &.form__error
+//     border-color: $rouge-clair
+
+// button
+//   transition: 0.15s ease-in-out
+//   transition-property: background-color, border-color
+//   &:hover
+//     cursor: pointer
+//     // border-color: transparent
+//     // background-color: $bleu
+//     // color: $blanc
+//   &#budget__empty
+//     background-color: $orange-clair
+//     // color: $orange
+//   &#budget__delete
+//     background-color: $rouge-clair
+//     // color: $rouge
+
+// .form__error
+//   border-color: $rouge-clair
+
+// input
+//   padding: 0.5rem

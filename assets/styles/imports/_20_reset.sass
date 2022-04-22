@@ -1,0 +1,32 @@
+*
+  padding: 0
+  margin: 0
+  line-height: 1.5
+  list-style-type: none
+
+  &:focus
+    outline: none
+
+  &,
+  &::before,
+  &::after
+    box-sizing: border-box
+
+html
+  color: color(noir,base)
+  font-size: 100%
+  font-family: Nunito
+
+.container
+  padding: 0 $padding
+  display: flow-root
+
+  &.maxw
+    padding: 0 max($padding,calc((100% - $maxWidth) / 2))
+
+a
+  color: inherit
+  text-decoration: none
+
+p
+  margin: 1rem 0

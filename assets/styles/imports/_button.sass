@@ -1,0 +1,24 @@
+$colorsButton: 'bleu','rouge','vert','orange'
+  
+button,
+a  
+  &.button--regular
+    display: inline-flex
+    padding: 0.5rem
+    border-radius: 0.25rem
+    border: none
+    border: 1px solid transparent
+  
+  @each $color in $colorsButton
+    &.button--#{$color}
+      // background-color: red
+      background-color: color(#{$color},clair)
+      color: color($color,fonce) !important
+  
+  &.button--colorless
+    background-color: transparent
+    color: inherit
+    border-color: color(noir,gris-clair) !important
+  
+  &.button--center
+    justify-content: center
