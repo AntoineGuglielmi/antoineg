@@ -11,10 +11,16 @@ const getUriNormalized = (uri, nestedParams = {}) => {
     : `/api${uri}`
 }
 
+const params = {
+  headers: {
+    'Access-Control-Allow-Origin': '*'
+  }
+}
+
 export default (httpClient) => (uri) => ({
 
   delete_by(params) {
-    return httpClient.$delete(getUriNormalized(`${uri}`, params));
+    return httpClient.$delete(getUriNormalized(`${uri}`, params), params);
   }
 
   // get_nested(params) {
