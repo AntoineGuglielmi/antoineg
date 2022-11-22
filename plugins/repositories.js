@@ -8,6 +8,7 @@ export default ({ $axios }, inject) => {
   const repositories = {
     budgets: rawRepositoryInjector('budgets'),
     cfg: rawRepositoryInjector('config'),
+    archives: rawRepositoryInjector('archives'),
     navLinks: rawRepositoryInjector('nav-links'),
     costs: {
       ...rawRepositoryInjector('costs'),

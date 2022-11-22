@@ -23,6 +23,7 @@
           >
             <Atoms-Cost
               :cost="cost"
+              :budgetName="budgetName(cost.budgets_id)"
               :deleteButton="false"
             />
           </li>

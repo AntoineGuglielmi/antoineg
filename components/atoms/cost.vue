@@ -1,17 +1,26 @@
 <template>
   <div class="cost">
-    <Nuxt-Link
-      class="cost__name"
-      :to="{
-        name: 'costs-costId',
-        params: {
-          costId: cost.id
-        }
-      }"
-    >
-      {{ cost.name }}
-    </Nuxt-Link>
 
+    <div class="costInfos__main">
+      <div class="costInfos__header">
+        <Nuxt-Link
+          class="cost__name"
+          :to="{
+            name: 'costs-costId',
+            params: {
+              costId: cost.id
+            }
+          }"
+        >
+          {{ cost.name }}
+        </Nuxt-Link>
+      </div>
+
+      <div class="costInfos__body">
+        <p>{{ budgetName }}</p>
+      </div>
+    </div>
+    
     <p class="cost__amount">
       {{ amount }}
     </p>
@@ -48,6 +57,10 @@ export default {
     deleteButton: {
       type: Boolean,
       default: true
+    },
+    budgetName: {
+      type: String,
+      default: ''
     }
   },
   computed: {
@@ -83,9 +96,22 @@ export default {
   background-color: $bleu-clair
   border-radius: 0.25rem
 
-  .cost__name
-    text-decoration: underline
+  .costInfos__main
+    width: 100%
     padding: 0.75rem
+
+    .costInfos__header
+      display: flex
+
+      .cost__name
+        text-decoration: underline
+        // padding: 0.75rem
+    
+    .costInfos__body
+      p
+        font-size: 0.75rem
+        font-style: italic
+        margin: 0
 
   .cost__amount
     margin: 0
